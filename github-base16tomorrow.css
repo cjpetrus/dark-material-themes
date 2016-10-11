@@ -1,0 +1,482 @@
+html {
+  background-color: #1d1f21 !important;
+  min-height: 100% !important; }
+
+body {
+  background-color: #e2e0de !important;
+  min-height: 100% !important;
+  -webkit-filter: invert(100%) !important; }
+
+img,
+iframe,
+video,
+embed:not([type$="pdf"]),
+object,
+svg,
+canvas,
+[background*="http"] {
+  -webkit-filter: invert(100%)  !important; }
+
+*[style*="background-image:"] {
+  -webkit-filter: invert(100%)  !important; }
+
+div.drk_settings,
+div.drk_settings_icon,
+div.drk_dialog,
+.addthis_sharing_toolbox,
+.drk_invert_back {
+  -webkit-filter: invert(100%)  !important; }
+
+*:-webkit-full-screen {
+  -webkit-filter: invert(100%)  !important; }
+
+button, input[type="submit"], input[type="button"] {
+  background-color: #7e5d41 !important;
+  color: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+  button span, input[type="submit"] span, input[type="button"] span {
+    color: #c8c4be !important; }
+
+textarea, input[type="text"] {
+  background-color: #d7d5d1 !important;
+  color: #1f1f1f !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+
+html {
+  text-shadow: 0 0 0 !important; }
+
+a {
+  color: #7e5d41 !important; }
+
+a:visited {
+  color: #4d6b44 !important; }
+
+a:active {
+  color: #0f398b !important; }
+
+::-webkit-scrollbar {
+  background: #1d1f21; }
+
+::-webkit-scrollbar-track {
+  background: #292c2f; }
+
+::-webkit-scrollbar-thumb {
+  background: #43484f;
+  border-left: 2px solid #292c2f;
+  border-right: 1px solid #292c2f;
+  box-shadow: inset 1px 1px 0 rgba(100, 100, 100, 0.2), inset -1px -1px 0 rgba(0, 0, 0, 0.4); }
+
+.drk_settings_global_msg.visible {
+  display: block !important; }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Guidelines:
+* Please avoid hard-coding #rrggbb colors. Use the variables in themes/monokai.scss instead.
+* Please add short comments before each CSS selector to indicate what UI element it refers to
+* Before starting, take a look at google.scss, facebook.scss to see how a skin should look like
+
+You should know: all the website's colors are inverted before skinning even starts!
+* To make skinning easier, the entire website is inverted ("negative") by adding -webkit-filter: invert(100%) to <body> (done in all-websites.scss)
+* In order to compensate for that, all the theme colors (in monokai.scss) are inverted back! e.g. $theme-link: invert-back-color($blue);
+* This generally shouldn't affect you, since you should always use variables such as $theme-color or $theme-border, and not absolute #rrggbb colors
+* Sometimes you'll want to invert elements back to their original color (e.g. negative images). Use invert-back: .elm { @include invert-back() }
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #e2e0de !important; }
+
+button {
+  background-color: #7e5d41 !important;
+  color: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+
+textarea, input, input[type="text"] {
+  color: #1f1f1f !important;
+  background-color: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+
+svg {
+  color: #c8c4be !important; }
+
+.counter {
+  background: #4a4297 !important;
+  color: #fff !important; }
+
+a {
+  color: #7e5d41 !important; }
+  a:visited {
+    color: #4d6b44 !important; }
+  a:active {
+    color: #0f398b !important; }
+
+.header,
+.header > div {
+  background-color: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+#user-links > li > a {
+  color: #1f1f1f !important;
+  -webkit-filter: invert(100%)  !important; }
+  #user-links > li > a img {
+    -webkit-filter: none !important; }
+  #user-links > li > a .dropdown-caret {
+    -webkit-filter: invert(100%)  !important; }
+
+.dropdown-menu,
+.dropdown-menu form > button {
+  background-color: #d7d5d1 !important; }
+
+.svg-tip {
+  background: #4b484b !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #c8c4be !important; }
+
+.dashboard-sidebar > div,
+.dashboard-sidebar > div > h3,
+.dashboard-sidebar > div > div,
+.dashboard-sidebar > div > div > ul > li,
+.dashboard-sidebar > div > div > div {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.repo-filterer > li > button,
+.repo-filterer > li > a {
+  background: #d7d5d1 !important; }
+  .repo-filterer > li > button.filter-selected,
+  .repo-filterer > li > a.filter-selected {
+    color: #0f398b !important;
+    border-color: rgba(0, 0, 0, 0.15) !important; }
+  .repo-filterer > li > button:hover,
+  .repo-filterer > li > a:hover {
+    background: #c8c4be !important; }
+  .repo-filterer > li > button:active,
+  .repo-filterer > li > a:active {
+    background-color: #d8c4b3 !important; }
+
+.dashboard-sidebar > div > div > ul > .private > a {
+  background-color: #e2e0de !important; }
+
+.js-menu-content div,
+.js-menu-content .select-menu-list > div > a,
+.js-menu-content .select-menu-list > a {
+  background-color: #d7d5d1 !important;
+  color: #1f1f1f !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+  .js-menu-content div:hover,
+  .js-menu-content .select-menu-list > div > a:hover,
+  .js-menu-content .select-menu-list > a:hover {
+    background-color: #c8c4be !important; }
+  .js-menu-content div.selected,
+  .js-menu-content .select-menu-list > div > a.selected,
+  .js-menu-content .select-menu-list > a.selected {
+    background-color: #c7aa91 !important;
+    color: #0f398b !important; }
+
+.select-menu > button {
+  background: #c8c4be !important;
+  color: #3a3739 !important; }
+  .select-menu > button span {
+    color: #3a3739 !important; }
+
+nav > a svg {
+  -webkit-filter: none !important;
+  background: #e2e0de !important; }
+
+nav > a:visited svg {
+  color: #3a3739 !important; }
+
+nav > div > a {
+  background: #c8c4be !important;
+  color: #3a3739 !important; }
+
+.boxed-group-action > a {
+  background-color: #7e5d41 !important;
+  color: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+
+.news .alert .body {
+  color: #3a3739 !important; }
+
+.news .alert .body .title,
+.news .alert .body .time,
+.news blockquote {
+  color: #4b484b !important; }
+
+.sn-jumbotron,
+.jumbotron-home {
+  -webkit-filter: invert(100%)  !important; }
+
+.header-logo > svg {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #c8c4be !important; }
+
+.user-profile-nav,
+.profile-timeline-year-list,
+.user-profile-sticky-bar,
+.user-profile-sticky-bar:after,
+.profile-timeline-month-heading,
+.contributions-setting-link,
+.profile-rollup-toggle {
+  background-color: #e2e0de !important; }
+
+.site-header {
+  background-color: #c8c4be !important; }
+
+.pinned-repo-item {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.profile-timeline-card-wrapper > .profile-timeline-card,
+.mb-5 {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.edit_user button {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.filter-item.selected {
+  background: #c8c4be !important; }
+
+.btn,
+a.btn, a.btn:visited, a.btn:hover,
+.social-count,
+.btn-block.mb-3 {
+  background: #7e5d41 !important;
+  color: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+
+.legend > li {
+  -webkit-filter: invert(100%)  !important; }
+
+.starred > button,
+.user-following-container button {
+  background: #7e5d41 !important;
+  color: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+
+.pagehead.repohead,
+.overall-summary,
+.commit-tease,
+.file-wrap > .files {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.readme,
+.readme > h3,
+.readme > .markdown-body,
+.readme > .plain {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.muted-link {
+  background: #e2e0de !important; }
+
+.reponav-item.selected {
+  background: #c8c4be !important; }
+
+.reponav-item svg {
+  -webkit-filter: none !important;
+  background: #e2e0de !important;
+  color: #3a3739 !important; }
+
+.commit-tease-contributors,
+.file,
+.file-header {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.table-list-header,
+.Box-body,
+.blankslate {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.table-list-header svg {
+  -webkit-filter: none !important;
+  background: #e2e0de !important;
+  color: #3a3739 !important; }
+
+.timeline-comment-wrapper,
+.discussion-timeline-actions {
+  background-color: #e2e0de !important; }
+
+.timeline-comment,
+.comment-form-head,
+.form-control,
+.drag-and-drop,
+.comment-body {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.drag-and-drop .btn-link {
+  background: #d7d5d1 !important; }
+
+.timeline-comment > .timeline-comment-header,
+.timeline-comment-action {
+  background: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.timeline-comment-action {
+  background: #c8c4be !important; }
+  .timeline-comment-action svg {
+    -webkit-filter: none !important;
+    background: #e2e0de !important;
+    color: #3a3739 !important; }
+
+.toolbar-group > button,
+.menu-target {
+  background: #d7d5d1 !important; }
+  .toolbar-group > button svg,
+  .menu-target svg {
+    -webkit-filter: none !important;
+    background: #e2e0de !important;
+    color: #3a3739 !important; }
+
+.toolbar-help svg {
+  -webkit-filter: none !important;
+  background: #e2e0de !important;
+  color: #3a3739 !important; }
+
+.thread-subscription-status .reason {
+  background: #e2e0de !important; }
+
+.mergeability-details,
+.merge-status-list > div {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.tabnav-tab.selected {
+  background: #c8c4be !important; }
+
+.pr-toolbar,
+.diffbar {
+  background: #c8c4be !important; }
+
+.project-header,
+.col-project-custom > .project-column-header {
+  background: #c8c4be !important; }
+
+.project-column-inner,
+.issue-card,
+.project-card {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.project-columns {
+  background: #e2e0de !important; }
+
+.wiki-pages-box,
+.filter-bar,
+.wiki-auxiliary-content,
+.wiki-pages {
+  background-color: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.boxed-group > h3 {
+  background: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.boxed-group > div {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.repository-content .select-menu-item .selected {
+  background: #d8c4b3 !important; }
+
+.pagehead,
+.column > nav {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.column .menu-heading {
+  background: #c8c4be !important; }
+
+.menu-item.selected {
+  background: #d7d5d1 !important; }
+
+.boxed-group-list > li {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.listgroup > div {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.orgnav > a.selected {
+  background: #c8c4be !important; }
+
+.orghead {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.org-module,
+.simple-box-footer {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.org-module-title {
+  background: #c8c4be !important; }
+
+.table-list-header,
+.table-list-header-toggle .select-menu > button {
+  background: #c8c4be !important; }
+
+.table-list-item {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+  .table-list-item svg {
+    -webkit-filter: none !important;
+    background: #e2e0de !important;
+    color: #3a3739 !important; }
+
+.team-members {
+  background: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.boxed-group input {
+  color: #1f1f1f;
+  background: #d7d5d1;
+  border-color: rgba(0, 0, 0, 0.15); }
+
+.flash {
+  background: #216ca0 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #c8c4be !important; }
+
+.column > nav.menu .menu-heading {
+  background: #c8c4be !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3a3739 !important; }
+
+.column > nav.menu a {
+  background-color: #d7d5d1 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; }
+
+.intro-shelf, .intro-shelf .shelf-lead {
+  color: #3a3739 !important; }
+
+/*# sourceMappingURL=github-base16tomorrow.css.map */
